@@ -1,0 +1,39 @@
+1---Avatar-bu profil rasmi. har bir odamning kompyuterda yoki saytda o'zining rasmi bo'ladi shuni ko'rsatish uchun ishltiladi
+<Avatar alt="img linki xato bo'lsa o'rniga alt ichidagi malumot chiqadi" src"img linki qo'yiladi"/>
+  <Stack direction="row" spacing={2}>
+   <Avatar>H</Avatar>
+    <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>
+    <Avatar sx={{ bgcolor: deepPurple[500] }}>OP</Avatar>
+  </Stack>
+
+  Stack -bu komponentlarni ustma-ust qilish yoki yonma yon joylashtirish uchun ishlatiladi
+  direction-komponentlar gorizontal (yonma-yon) joylashadi.
+  spacing={2}---bu Avatar o'rtasida bo'shliq(gap) bo'ladi .
+
+
+
+2---Badge-bu xabarnomalar soni. Masalan, telefonimizda 5 ta yangi xabar bor degan belgini ko‘rganmiz — ana shu badge.
+<Badge badgeContent={4} color="primary">
+  <MailIcon />
+</Badge>
+badgeContent-Belgining ustida 4 raqami chiqadi.
+
+3---Chip-bu foydalanuvchi haqida ma'lumot yoki kategoriyani ko‘rsatish uchun ishlatiladi
+
+<Chip label="Frontend" color="primary" />
+label="Frontend" — chip ustida chiqadigan yozuv.
+color="primary" — ko‘k rangli chip bo‘ladi (asosiy tema rangi).
+variant-Chip tugmasining ko‘rinishini o‘zgartiradi.(outlined-Chip faqat chiziqli, fon yo‘q,filled-Chip to‘liq rang bilan chiqadi)
+
+
+4---Divider-bu  ajratgich. Matnlar orasiga chiziq qo‘yib ajratib turish uchun ishlatiladi.
+<Divider orientation="vertical" variant="middle" flexItem />
+orientation="vertical"-Ajratgich tik (vertikal) bo‘ladi (odatiy — gorizontal).
+variant="middle"-Ajratgich eng baland yoki pastga yopishmaydi, o‘rta qismda turadi.
+
+
+5-----Icons--bu tugmalar ustida chizilgan rasmlar. Masalan, axlat qutisi rasmi — o‘chirish, qalamtas rasmi — tahrirlash degani
+<HomeIcon fontSize="small" />
+<HomeIcon />
+<HomeIcon fontSize="large" />
+<HomeIcon sx={{ fontSize: 40 }} />
