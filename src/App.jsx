@@ -2,7 +2,6 @@ import { Container, Typography } from "@mui/material";
 import { TodoProvider } from "./context/TodoContext";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
-import MuiTxt from "../muiTxt";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
         <TodoForm />
         <TodoList />
       </Container>
-      <MuiTxt />
     </TodoProvider>
   );
 }
